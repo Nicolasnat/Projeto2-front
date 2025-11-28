@@ -1,0 +1,34 @@
+{
+  "accommodations": [
+    {
+      "id": 1,
+      "name": "Hotel Sunshine",
+      "location": "Beachside",
+      "rating": 4.5,
+      "img": "https://picsum.photos/200", 
+      "description": "A beautiful hotel by the beach with stunning views and excellent amenities.",
+      "pricePerNight": 150,
+      "tipo_de_propriedade": "Hotel",
+      "vibe_da_viagem": "Relaxante",
+      "comodidades": ["WiFi", "Piscina", "Café da manhã incluso", "vista para praia", "restaurante"],
+      "quant_de_hospedes": 2,
+      "quant_de_quartos": 2,
+      "quant_de_banheiros": 1
+    },
+    {
+      "id": 2,
+      "name": "Mountain Retreat",
+      "location": "Hills",
+      "rating": 4.7,
+      "img": "https://picsum.photos/200",  
+      "description": "A serene retreat in the mountains, perfect for nature lovers and adventure seekers.",
+      "pricePerNight": 250,
+      "tipo_de_propriedade": "Villa",
+      "vibe_da_viagem": "Romantica",
+      "comodidades": ["WiFi", "Piscina", "Café da manhã incluso", "restaurante", "Trilhas", "lareira", "cozinha"],
+      "quant_de_hospedes": 4,
+      "quant_de_quartos": 3,
+      "quant_de_banheiros": 2
+    }
+  ]
+}

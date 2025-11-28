@@ -1,0 +1,36 @@
+import { Component, inject, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AccommodationsService } from '../../services/accommodationsservice';
+
+@Component({
+  selector: 'app-accommodations',
+  templateUrl: './accommodations.html',
+  styleUrls: ['./accommodations.css'],
+  standalone: true,
+  imports: [CommonModule],
+})
+export class Accommodations implements OnInit {
+  public response: any[] = [];
+
+  constructor(private accommodationsService: AccommodationsService) {}
+
+  ngOnInit(): void {
+    this.fetchAccommodations();
+  }
+
+  public fetchAccommodations(): void {
+    this.accommodationsService.getAccommodations().subscribe(
+      (data) => {
+        this.response = data; 
+        console.log('Array de acomodações:', this.response);
+      },
+      (error) => {
+        console.error('Erro ao buscar acomodações:', error);
+      }
+    );
+  }
+
+  quantItens(): number {
+    return this.response ? this.response.length : 0;
+  }
+}
