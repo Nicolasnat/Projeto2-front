@@ -29,6 +29,51 @@
       "quant_de_hospedes": 4,
       "quant_de_quartos": 3,
       "quant_de_banheiros": 2
+    },
+    {
+      "id": 3,
+      "name": "Mountain Retreat",
+      "location": "Hills",
+      "rating": 4.7,
+      "img": "https://picsum.photos/200",  
+      "description": "A serene retreat in the mountains, perfect for nature lovers and adventure seekers.",
+      "pricePerNight": 250,
+      "tipo_de_propriedade": "Villa",
+      "vibe_da_viagem": "Romantica",
+      "comodidades": ["WiFi", "Piscina", "Café da manhã incluso", "restaurante", "Trilhas", "lareira", "cozinha"],
+      "quant_de_hospedes": 4,
+      "quant_de_quartos": 3,
+      "quant_de_banheiros": 2
+    },
+    {
+      "id": 4,
+      "name": "Mountain Retreat",
+      "location": "Hills",
+      "rating": 4.7,
+      "img": "https://picsum.photos/200",  
+      "description": "A serene retreat in the mountains, perfect for nature lovers and adventure seekers.",
+      "pricePerNight": 250,
+      "tipo_de_propriedade": "Villa",
+      "vibe_da_viagem": "Romantica",
+      "comodidades": ["WiFi", "Piscina", "Café da manhã incluso", "restaurante", "Trilhas", "lareira", "cozinha"],
+      "quant_de_hospedes": 4,
+      "quant_de_quartos": 3,
+      "quant_de_banheiros": 2
+    },
+    {
+      "id": 5,
+      "name": "Mountain Retreat",
+      "location": "Hills",
+      "rating": 4.7,
+      "img": "https://picsum.photos/200",  
+      "description": "A serene retreat in the mountains, perfect for nature lovers and adventure seekers.",
+      "pricePerNight": 250,
+      "tipo_de_propriedade": "Villa",
+      "vibe_da_viagem": "Romantica",
+      "comodidades": ["WiFi", "Piscina", "Café da manhã incluso", "restaurante", "Trilhas", "lareira", "cozinha"],
+      "quant_de_hospedes": 4,
+      "quant_de_quartos": 3,
+      "quant_de_banheiros": 2
     }
   ]
 }

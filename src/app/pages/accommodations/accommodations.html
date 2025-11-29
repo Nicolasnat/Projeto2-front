@@ -1,7 +1,11 @@
 <div class="accommodations">
-  <h1>Acomodações Disponíveis</h1>
-  <p>{{quantItens()}} propriedades Disponíveis</p>
-  @for(accommodate of response; track $index){
+  <div class="text_accommodate">
+    <h2>Acomodações Disponíveis</h2>
+    <p>{{quantItens()}} propriedades Disponíveis</p>
+  </div>
+  
+  <div class="objects">
+     @for(accommodate of response; track $index){
     <div class="accommodation-card">
       <img [src]="accommodate.img" alt="Imagem da acomodação" />
       <h3>{{accommodate.name}}</h3>
@@ -10,15 +14,6 @@
       <p>Preço por noite: {{accommodate.pricePerNight | currency}}</p>
     </div>
   }
-  <!--  <div *ngIf="response">
-    <div *ngFor="let accommodate of response">
-      <div class="accommodation-card">
-        <img [src]="accommodate.img" alt="Imagem da acomodação" />
-        <h3>{{accommodate.name}}</h3>
-        <p>{{accommodate.description}}</p>
-        <p>Localização: {{accommodate.location}}</p>
-        <p>Preço por noite: {{accommodate.pricePerNight | currency}}</p>
-      </div>
-    </div>
-  </div> -->
+  </div>
+  
 </div>

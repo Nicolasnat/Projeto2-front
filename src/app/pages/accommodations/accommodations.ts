@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccommodationsService } from '../../services/accommodationsservice';
 
@@ -12,7 +12,10 @@ import { AccommodationsService } from '../../services/accommodationsservice';
 export class Accommodations implements OnInit {
   public response: any[] = [];
 
-  constructor(private accommodationsService: AccommodationsService) {}
+  constructor(
+    private accommodationsService: AccommodationsService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.fetchAccommodations();
@@ -23,6 +26,7 @@ export class Accommodations implements OnInit {
       (data) => {
         this.response = data; 
         console.log('Array de acomodações:', this.response);
+        this.cdr.detectChanges();
       },
       (error) => {
         console.error('Erro ao buscar acomodações:', error);
